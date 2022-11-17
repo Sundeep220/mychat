@@ -1,7 +1,6 @@
 # mychat
 
 `MyChat` is an online platform video calling application built using AgoraSDK for JavaScript, Django.
-- App deployed on Heroku: https://sundeep-mychat-22.herokuapp.com/
 
 
 
