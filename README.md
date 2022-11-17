@@ -23,16 +23,36 @@
     4. Create a superuser for your project: \
         `python manage.py createsuperuser`   
         This will prompt you to enter username, email and password for the superuser.  
-    5. Run the server using: \
-        `python manage.py runserver`
+        
+#### Update Agora credentals
+In order to use this project you will need to replace the agora credentials in `views.py` and `streams.js`.
+Create an account at agora.io and create an `app`. Once you create your app with token and appid authentication, you will want to copy the `appid` & `appCertificate` to update `views.py` and `streams.js`.
+
+###### views.py
+```
+def getToken(request):
+    appId = "YOUR APP ID"
+    appCertificate = "YOUR APPS CERTIFICATE"
+    ......
+```
+
+###### streams.js
+```
+....
+const APP_ID = 'YOUR APP ID'
+....
+```
+
+
+#### 4 - Start server
+```
+python manage.py runserver
+```
         
 - Home page:
 
 
 ![join_room](https://user-images.githubusercontent.com/93663329/202516685-f77f05d6-399b-4c28-8672-c647b0c515de.png)
 
-- Call view:
 
-
-![group call](https://user-images.githubusercontent.com/93663329/202516845-a4a83686-5883-4156-a64b-2ba5caaa594b.png)
 
